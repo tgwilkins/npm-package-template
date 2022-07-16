@@ -12,4 +12,4 @@ Running `cookiecutter --version` should display the version of cookiecutter if e
 
 ## Usage
 
-Run `cookiecutter gh:tgwilkins/npm-package-template` in the directory where you woud like the project to go and when prompted, input variables to create a new repository.
+Run `cookiecutter gh:tgwilkins/npm-package-template` in the directory where you would like the project to go and when prompted, input variables to create a new repository.
