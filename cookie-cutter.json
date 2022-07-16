@@ -1,0 +1,9 @@
+{
+    "project_slug": "my-npm-package",
+    "description": "Enter a description of the package.",
+    "author": "Tom Wilkins",
+    "owner": "tgwilkins",
+    "tags": {
+        "keywords": []
+    }
+}

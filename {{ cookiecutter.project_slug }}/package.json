@@ -1,0 +1,63 @@
+{
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "1.0.0",
+  "description": "{{ cookiecutter.description }}",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest"
+  },
+  "keywords": {{ cookiecutter.tags.keywords }},
+  "author": "{{ cookiecutter.author }}",
+  "license": "ISC",
+  "dependencies": {},
+  "repository": {
+    "url": "https://github.com/{{ cookiecutter.owner }}/{{ cookiecutter.project_slug }}"
+  },
+  "devDependencies": {
+    "typescript": "4.7.4",
+    "eslint": "7.18.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-unused-imports": "1.0.1",
+    "jest": "26.6.3",
+    "jest-ts-auto-mock": "2.0.0",
+    "prettier": "2.2.1",
+    "ts-auto-mock": "3.5.0",
+    "ts-jest": "26.5.4",
+    "@types/jest": "26.0.22",
+    "@types/node": "10.17.27",
+    "@typescript-eslint/eslint-plugin": "4.14.0",
+    "@typescript-eslint/parser": "4.14.0"
+  },
+  "jest": {
+    "maxWorkers": 4,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": -10
+      }
+    },
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": ".test\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}
